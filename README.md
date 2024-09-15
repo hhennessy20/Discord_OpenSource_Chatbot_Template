@@ -10,18 +10,18 @@ In addition, you'll need to download and set up an ollama model:
 https://github.com/ollama/ollama/tree/main
 
 To create a simple ollama model using llama3.1, you can enter the following command:
-ollama run llama3.1
+>ollama run llama3.1
 
 This will download the llama3.1 model library, which takes up about 5 gigabytes.
 
 Once you have downloaded llama3.1, you can create your own model with its own personality and name using a modelfile. To do so, create a .txt file with the following format:
 
-FROM [model library name]
-
-SYSTEM [context message. Basically, describe how you want your bot to act and any information it needs to function.]
+>FROM [model library name]
+>
+>SYSTEM [context message. Basically, describe how you want your bot to act and any information it needs to function.]
 
 Then, you'll need the following command to generate your model in ollama:
-ollama create choose-a-model-name -f <location of the file e.g. ./Modelfile>
+>ollama create choose-a-model-name -f <location of the file e.g. ./Modelfile>
 
 Ollama will remember any models you make, and if you decide to change your model's context, simply calling the above command again will overwrite your model with the new modelfile.
 
