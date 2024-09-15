@@ -1,4 +1,4 @@
-# Discord_OpenSource_Chatbot_Template
+# Discord OpenSource Chatbot Template
 A simple ollama chatbot and template to create and run it, created as a personal project by hhennessy20 and shnabbydoodle.
 
 You'll need to have Python and the discord library, as well as asyncio and requests. Use "pip install [package-name]" for these.
