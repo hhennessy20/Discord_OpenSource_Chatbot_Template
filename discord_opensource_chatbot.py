@@ -12,10 +12,6 @@ import requests
 import json
 import os
 
-# Sets directory to directory of file
-script_dir = os.path.dirname(os.path.abspath(__file__))
-os.chdir(script_dir)
-
 #Saves memory to json
 def save_to_json(file_path, data):
     with open(file_path, 'w') as file:
