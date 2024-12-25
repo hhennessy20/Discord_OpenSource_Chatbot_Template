@@ -1,4 +1,9 @@
 import discord_opensource_chatbot
+import os
+
+# Sets the directory to the directory of the file
+script_dir = os.path.dirname(os.path.abspath(__file__))
+os.chdir(script_dir)
 
 #Enter the name(s) you'd like to use to call your bot with
 names = ["NAME", "NAME_2", "NAME_N"]
